@@ -11,6 +11,9 @@ cc_binary(
 
 cc_test(
 	name="link_repro",
-	srcs=["test.cc", ":libsome.so"],
+	srcs=[
+            "test.cc",
+            ":libsome.so"
+          ],
 	deps=[":regular_dep"],
 )
